@@ -88,93 +88,70 @@
                	<div class="col-xs-12 col-md-12 col-lg-6">
                   <div class="au-form-group">
 <h2>Package details</h2>
-
+					
+					  <div class="au-form-group">
+                      <h3 class="au-display-sm">UN or ID number</h3>
+                     
+                          <input type="text" class="au-text-input" />
+                    </div>
                       
                       <div class="au-form-group">
                                   <label class="au-label" for="name">Proper shipping name</label>
                                   <input type="text" class="au-text-input au-text-input--block" id="shipping-name"/>
                     	</div>
-                      
-                      
-                      					
-                      
-                      
-                    <div class="au-form-group">
-                      <h3 class="au-display-sm">UN or ID number</h3>
-                      <!--<label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">Please enter the flight number</label>-->
+					  
+                     <div class="au-form-group">
+                      <h3 class="au-display-sm">Class / Division</h3>
+                     
                           <input type="text" class="au-text-input" />
                     </div>
-
-                      <div class="au-form-group">     
-                    <fieldset class="au-fieldset">
-                        <legend class="au-fieldset__legend">
-                            <h3 class="au-display-sm">Class/Division</h3>
-                        </legend>
-
-                        <div class="au-control-input au-control-input--block">
-                            <input class="au-control-input__input" type="radio" name="radio-ex" id="yes" value="class-yes">
-                                <label class="au-control-input__text" for="yes">Known</label>
-                        </div>
-                        
-                        <div class="au-control-input au-control-input--block">
-                            <input class="au-control-input__input" type="radio" name="radio-ex" id="no" value="class-no">
-                                <label class="au-control-input__text" for="no">Unknown</label>
-                        </div>
-
-
-                        
+   
                     </fieldset>
                     </div> 
 
-                   <div class="au-form-group">
-  <h3 class="au-display-sm">Subsidiary risk(s) </h3>
-  <label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">Please provide a list of all subsidaiary risks.</label>
-        <textarea class="au-text-input au-text-input--block" name="textarea" id="textarea">
-
-        </textarea>
-        <em>Maximum 4000 characters and minimum 50 characters</em>
-
-</div>
-                      
+                  
+	<div class="au-form-group">
+                        <label for="sub hazard" class="au-label">Subsidiary Hazard </label>
+                        <span class="au-hint-text">
+                        Please select the subsidiary hazards from the list below
+                        </span>
+                        <select id="sub hazard" class="au-select au-select--block">
+                           <option value="1">Please select the subsidiary hazards</option>
+							<option value="2">*list to be provided*</option>
+                        </select>
+                     </div>
+	
+	              
+	<div class="au-form-group">
+                        <label for="packing-group" class="au-label">Packing group </label>
+                        <span class="au-hint-text">
+                        Please select the packing group from the list below
+                        </span>
+                        <select id="packing-group" class="au-select au-select--block">
+                           <option value="1">Please select the packing group</option>
+							<option value="2">Packing group I</option>
+							<option value="3">Packing group II</option>
+							<option value="3">Packing group III</option>
+                        </select>
+                     </div>
+        
                       <div class="au-form-group">
-                                  <label class="au-label" for="name">Packing group</label>
-                                  <input type="text" class="au-text-input au-text-input--block" id="packing-group"/>
+                                  <label class="au-label" for="name">x Radio active material x</label>
+                                 
                     	</div>
                       
                       <div class="au-form-group">
-                                  <label class="au-label" for="name">Type of packaging</label>
-                                  <input type="text" class="au-text-input au-text-input--block" id="packaging-type"/>
-                    	</div>
-                      
-                      <div class="au-form-group">
-                                  <label class="au-label" for="name">Package specification markings</label>
+                                  <label class="au-label" for="name">Packaging type</label>
+						   <label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">UN package specification code / description of packaging used</label>
                                   <input type="text" class="au-text-input au-text-input--block" id="specification-markings"/>
                     	</div>
                       
-                     <div class="au-form-group">
-                      <h3 class="au-display-sm">Number of packages</h3>
-                      <!--<label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">Please enter the flight number</label>-->
-                          <input type="text" class="au-text-input" />
-                    </div>
-                      
-                      <div class="au-form-group">
-                      <h3 class="au-display-sm">Number of shipments</h3>
-                      <!--<label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">Please enter the flight number</label>-->
-                          <input type="text" class="au-text-input" />
-                    </div>
-                      
-                      <div class="au-form-group">
-                      <h3 class="au-display-sm">Reference number of Air Waybill</h3>
-                      <!--<label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">Please enter the flight number</label>-->
-                          <input type="text" class="au-text-input" />
-                    </div>
-                      
-                      <div class="au-form-group">
-                      <h3 class="au-display-sm">Reference number of courier pouch, mail bag, baggage tag or passenger ticket</h3>
-                      <!--<label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">Please enter the flight number</label>-->
-                          <input type="text" class="au-text-input" />
-                    </div>
-
+	 <div class="au-form-group">
+                                  <label class="au-label" for="name">Number and quantity of packages</label>
+		  <label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">E.g. 20 x 10kg boxes</label>
+                                  <input type="text" class="au-text-input au-text-input--block" id="number-quantity"/>
+                    	</div>
+	
                 <!-- standard next button -->
 
    				      <div class="au-form-group">

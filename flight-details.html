@@ -95,7 +95,7 @@
                           <input type="text" class="au-text-input" />
                     </div>
 					  
-					<!--  <div class="au-form-group casa-inline-form-group">
+				  <div class="au-form-group casa-inline-form-group">
                        <fieldset class="au-fieldset">
                             <legend class="au-fieldset__legend">
                                 <h3 class="au-display-sm">Date of flight</h3>
@@ -116,13 +116,30 @@
 
 
                         </fieldset>
-                    </div> -->
+                    </div> 
 
 					  <div class="au-form-group">
                         <label class="au-label" for="name">Aircraft registration</label>
 					
 				<input class="au-text-input au-text-input--block" name="vh-mark" id="vh-mark" type="text" value="">		
 				</div>
+					  <div class="au-form-group">
+                        <label class="au-label" for="name">Aircraft type</label>
+					
+				<input class="au-text-input au-text-input--block" name="vh-mark" id="vh-mark" type="text" value="">		
+				</div>
+					  
+					  <div class="au-form-group">
+                        <label for="destination-airport" class="au-label">Destination airport</label>
+                        <span class="au-hint-text">
+                        Please select the flight destination airport of where the incident occurred
+                        </span>
+                        <select id="destination-airport" class="au-select au-select--block">
+                           <option value="1">Please select the flight destination</option>
+                           <option value="2">SYD - Sydney Airport - YSSY</option>
+							<option value="2">*list of locations to be provided*</option>
+                        </select>
+                     </div>
 					  
 			
 					 <div class="au-form-group">
@@ -175,7 +192,7 @@
                 <!-- standard next button -->
 
    				      <div class="au-form-group">
-   				           <a class="au-btn" href="#">Next</a>
+   				           <a class="au-btn" href="dg-summary.html">Next</a>
 	              </div>
 
 
