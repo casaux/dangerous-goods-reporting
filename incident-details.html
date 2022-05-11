@@ -88,8 +88,50 @@
                	<div class="col-xs-12 col-md-12 col-lg-6">
                   <div class="au-form-group">
 <h2>Incident details</h2>
+			  
+					  <div class="au-form-group">
+                        <label for="report type" class="au-label">Type of report </label>
+                        <span class="au-hint-text">
+                        Please select the type of dangerous goods report this relates to
+                        </span>
+                        <select id="report-type" class="au-select au-select--block">
+                           <option value="1">Please select type of report</option>
+						 <option value="2">Accident</option>
+                           <option value="3">Incident</option>
+							<option value="4">Undeclared</option>
+							<option value="5">Misdeclared</option>
+							<option value="6">Occurance</option>
+                        </select>
+                     </div>
+<!--
+                                            <div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="radio" name="radio-ex1" id="accident" value="">
+  <label class="au-control-input__text" for="accident">Accident</label>
+</div>
+                      
+                      <div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="radio" name="radio-ex1" id="incident" value="">
+  <label class="au-control-input__text" for="incident">Incident</label>
+</div>
 
-           
+
+                      <div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="radio" name="radio-ex1" id="occurance" value="">
+  <label class="au-control-input__text" for="occurance">Occurance</label>
+</div>
+
+               <div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="radio" name="radio-ex1" id="undeclared" value="">
+  <label class="au-control-input__text" for="undeclared">Undeclared dangerous goods</label>
+</div>
+
+            <div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="radio" name="radio-ex1" id="misdeclared" value="">
+  <label class="au-control-input__text" for="misdeclared">Misdeclared dangerous goods</label>
+</div>
+--> 
+                  </fieldset>
+                  </div>
                       
                       					 <div class="au-form-group casa-inline-form-group">
                        <fieldset class="au-fieldset">
@@ -165,9 +207,9 @@
 
 </div>
 					  <div class="au-form-group">
-                        <label for="incident detected" class="au-label">When was the incident detected?</label>
+                        <label for="incident detected" class="au-label">Incident detected</label>
                         <span class="au-hint-text">
-                        Please select when the incident was detected
+                        Please select at what point the incident was detected
                         </span>
                         <select id="incident detected" class="au-select au-select--block">
                            <option value="1">Please select when the incident was detected</option>
