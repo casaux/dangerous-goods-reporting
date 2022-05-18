@@ -73,7 +73,7 @@
                <nav class="au-breadcrumbs" aria-label="breadcrumb">
                   <ul class="au-link-list au-link-list--inline">
                      <li><a href="dashboard-org.html">myCASA</a></li>
-                      <li>Dangerous goods report</li>
+                      <li>Dangerous goods event notification</li>
                   </ul>
                </nav>
 			 <div class="casa-section">
@@ -188,6 +188,21 @@
 							<option value="2">*list of locations to be provided*</option>
                         </select>
                      </div>
+	
+	 <div class="au-form-group">
+                        <label for="package type" class="au-label">Type of package</label>
+                        <span class="au-hint-text">
+                        Please select the type of package
+                        </span>
+                        <select id="package-type" class="au-select au-select--block">
+                           <option value="1">Please select type of package</option>
+						 <option value="2">Passenger</option>
+                           <option value="3">Cargo</option>
+							<option value="4">Mail</option>
+							<option value="5">Other</option>
+                        </select>
+                  </div>
+					  
 		<!--	<div> 
 					    <form role="search" aria-label="sitewide" class="au-search">
       <label for="standard" class="au-search__label">Search this website</label>
@@ -200,17 +215,17 @@
 			</div> 	-->	  
 					    <div class="au-form-group">
   <h3 class="au-display-sm">Description of the event</h3>
-  <label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">Please provide a description of the event including details of injury, damage etc.</label>
+  <label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">Please provide a description of the event including details of injury, damage, and the action taken during and since the event.</label>
         <textarea class="au-text-input au-text-input--block" name="textarea" id="textarea">
 
         </textarea>
-        <em>Maximum 500 characters</em>
+        <em>Maximum 1000 characters</em>
 
 </div>
 					  <div class="au-form-group">
                         <label for="incident detected" class="au-label">Event detected</label>
                         <span class="au-hint-text">
-                        Please select when the event was detected
+                        Please select at what stage the event was detected
                         </span>
                         <select id="incident detected" class="au-select au-select--block">
                            <option value="1">Please select when the event was detected</option>
@@ -226,20 +241,7 @@
                         </select>
                      </div>
                       
-				 <div class="au-form-group">
-                        <label for="package type" class="au-label">Type of package</label>
-                        <span class="au-hint-text">
-                        Please select the type of package
-                        </span>
-                        <select id="package-type" class="au-select au-select--block">
-                           <option value="1">Please select type of package</option>
-						 <option value="2">Passenger</option>
-                           <option value="3">Cargo</option>
-							<option value="4">Mail</option>
-							<option value="5">Other</option>
-                        </select>
-                  </div>
-					  
+				
                      
                       
           

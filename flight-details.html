@@ -91,9 +91,9 @@
 <!--
            <div class="au-form-group">
 			    <h3 class="au-display-sm">FIREFLY AVIATION PTY LTD <br>ARN: 6543210</h3> -->	
-                      <h3 class="au-display-sm">Flight number</h3>
-                      <label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">Please enter the flight number the event is related to</label>
-                          <input type="text" class="au-text-input" />
+                      <h3 class="au-display-sm">Flight number or flight details</h3>
+                      <label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">Please enter the flight number the event is related to </label>
+                          <input class="au-text-input au-text-input--block" name="flight-number" id="vh-mark" type="text" value="">	
                     </div>
 				  
 				 <!-- <div class="au-form-group casa-inline-form-group">
@@ -122,10 +122,10 @@
 					  <div class="au-form-group">
                         <label class="au-label" for="name">Aircraft registration</label>
 						<span class="au-hint-text">
-                        Please provide the aircraft registration number. For domestic this will start with VH
+                        Please provide the aircraft registration number. For Australian registered aircraft this will start with VH-. Foreign registered aircraft must submit thier event notifications to dg@casa.gov.au.
                         </span>
 					
-				<input class="au-text-input au-text-input--block" name="vh-mark" id="vh-mark" type="text" value="">		
+				<input class="au-text-input au-text-input--block" name="vh-mark" id="aircraft-registration" type="text" value="">		
 				</div>
 					<!--  <div class="au-form-group">
                         <label class="au-label" for="name">Aircraft type</label>
@@ -168,7 +168,7 @@
                   <fieldset class="au-fieldset">
                       <legend class="au-fieldset__legend">
                           <h3 class="au-display-sm"><abbr title="Australian Transport Safety Bureau">ATSB</abbr> reportable</h3>
-                          <span class="au-hint-text">Please select if the event was ATSB reportable</span>
+                          <span class="au-hint-text">Has this event been reported to the ATSB?</span>
                       </legend>
 
                                             <div class="au-control-input au-control-input--block">
