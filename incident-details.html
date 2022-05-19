@@ -126,54 +126,27 @@
 						  </div>
 					  </div>
 					  
-					  <div class="au-form-group" id="undeclared" style="display: none">
+					  <div class="au-form-group" id="undeclared-select" style="display: none">
 					  <div class="au-callout">
 						  <h4>Undeclared</h4>
 						  <p>Undeclared relate to *insert description*</p>
 						  </div>
 					  </div>
 					  
-					  <div class="au-form-group" id="misdeclared" style="display: none">
+					  <div class="au-form-group" id="misdeclared-select" style="display: none">
 					  <div class="au-callout">
 						  <h4>Misdeclared</h4>
 						  <p>Misdeclared relate to *insert description*</p>
 						  </div>
 					  </div>
-					   <div class="au-form-group" id="occurance" style="display: none">
+					   <div class="au-form-group" id="occurance-select" style="display: none">
 					  <div class="au-callout">
 						  <h4>Occurance</h4>
 						  <p>Occurance relate to *insert description*</p>
 						  </div>
 					  </div>
 				
-<!--
-                                            <div class="au-control-input au-control-input--block">
-  <input class="au-control-input__input" type="radio" name="radio-ex1" id="accident" value="">
-  <label class="au-control-input__text" for="accident">Accident</label>
-</div>
-                      
-                      <div class="au-control-input au-control-input--block">
-  <input class="au-control-input__input" type="radio" name="radio-ex1" id="incident" value="">
-  <label class="au-control-input__text" for="incident">Incident</label>
-</div>
-
-
-                      <div class="au-control-input au-control-input--block">
-  <input class="au-control-input__input" type="radio" name="radio-ex1" id="occurance" value="">
-  <label class="au-control-input__text" for="occurance">Occurance</label>
-</div>
-
-               <div class="au-control-input au-control-input--block">
-  <input class="au-control-input__input" type="radio" name="radio-ex1" id="undeclared" value="">
-  <label class="au-control-input__text" for="undeclared">Undeclared dangerous goods</label>
-</div>
-
-            <div class="au-control-input au-control-input--block">
-  <input class="au-control-input__input" type="radio" name="radio-ex1" id="misdeclared" value="">
-  <label class="au-control-input__text" for="misdeclared">Misdeclared dangerous goods</label>
-</div>
---> 
-                  </fieldset>
+              
                   </div>
                       
                       					 <div class="au-form-group casa-inline-form-group">
@@ -227,8 +200,10 @@
                         </span>
                         <select id="location" class="au-select au-select--block">
                            <option value="1">Please select the location</option>
-                           <option value="2">SYD - Sydney Airport - YSSY</option>
-							<option value="2">*list of locations to be provided*</option>
+                           <option value="2">SYD - Sydney airport - YSSY</option>
+							 <option value="3">MEL - Melbourne airport - YMML</option>
+							 <option value="4">BNE - Brisbane airport - YBBN</option>
+							 <option value="5">CBR - Canberra airport - YSCB</option>
                         </select>
                      </div>
 	
@@ -328,44 +303,44 @@ $("#report-type").on('input', function() {
          if($(this).val()==2){
           $("#accident-select").css("display","block");
              $("#incident-select").css("display","none");
-          $("undeclared").css("display","none");
-			 $("misdeclared").css("display","none");
-			 $("occurance").css("display","none");
+          $("#undeclared-select").css("display","none");
+			 $("#misdeclared-select").css("display","none");
+			 $("#occurance-select").css("display","none");
          }
          else if($(this).val()==3){
-          $("#accident").css("display","none");
-             $("#incident").css("display","block");
-          $("undeclared").css("display","none");
-			 $("misdeclared").css("display","none");
-			 $("occurance").css("display","none");
+          $("#accident-select").css("display","none");
+             $("#incident-select").css("display","block");
+          $("#undeclared-select").css("display","none");
+			 $("#misdeclared-select").css("display","none");
+			 $("#occurance-select").css("display","none");
          }
          	   else if($(this).val()==4){
-          $("#accident").css("display","none");
-             $("#incident").css("display","none");
-          $("undeclared").css("display","block");
-			 $("misdeclared").css("display","none");
-			 $("occurance").css("display","none");
+          $("#accident-select").css("display","none");
+             $("#incident-select").css("display","none");
+          $("#undeclared-select").css("display","block");
+			 $("#misdeclared-select").css("display","none");
+			 $("#occurance-select").css("display","none");
          }
 	         	   else if($(this).val()==5){
-          $("#accident").css("display","none");
-             $("#incident").css("display","none");
-          $("undeclared").css("display","none");
-			 $("misdeclared").css("display","block");
-			 $("occurance").css("display","none");
+          $("#accident-select").css("display","none");
+             $("#incident-select").css("display","none");
+          $("#undeclared-select").css("display","none");
+			 $("#misdeclared-select").css("display","block");
+			 $("#occurance-select").css("display","none");
          }
 	         	   else if($(this).val()==6){
-          $("#accident").css("display","none");
-             $("#incident").css("display","none");
-          $("undeclared").css("display","none");
-			 $("misdeclared").css("display","none");
-			 $("occurance").css("display","block");
+          $("#accident-select").css("display","none");
+             $("#incident-select").css("display","none");
+          $("#undeclared-select").css("display","none");
+			 $("#misdeclared-select").css("display","none");
+			 $("#occurance-select").css("display","block");
          }
          else {
- $("#accident").css("display","none");
-             $("#incident").css("display","none");
-          $("undeclared").css("display","none");
-			 $("misdeclared").css("display","none");
-			 $("occurance").css("display","none");
+ $("#accident-select").css("display","none");
+             $("#incident-select").css("display","none");
+          $("#undeclared-select").css("display","none");
+			 $("#misdeclared-select").css("display","none");
+			 $("#occurance-select").css("display","none");
          }
          
          
