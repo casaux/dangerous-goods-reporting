@@ -112,14 +112,14 @@
                         </select>
                      </div>
 					  
-					  <div class="au-form-group" id="accident" style="display: none">
+					  <div class="au-form-group" id="accident-select" style="display: none">
 					  <div class="au-callout">
 						  <h4>Accident</h4>
 						  <p>Accidents relate to *insert description*</p>
 						  </div>
 					  </div>
 					  
-					  <div class="au-form-group" id="incident" style="display: none">
+					  <div class="au-form-group" id="incident-select" style="display: none">
 					  <div class="au-callout">
 						  <h4>Incident</h4>
 						  <p>Incidents relate to *insert description*</p>
@@ -326,8 +326,8 @@
 $("#report-type").on('input', function() {
           
          if($(this).val()==2){
-          $("#accident").css("display","block");
-             $("#incident").css("display","none");
+          $("#accident-select").css("display","block");
+             $("#incident-select").css("display","none");
           $("undeclared").css("display","none");
 			 $("misdeclared").css("display","none");
 			 $("occurance").css("display","none");
