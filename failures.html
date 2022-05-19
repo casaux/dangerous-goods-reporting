@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>myCASA</title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="initial-scale=1">
+      <link rel="stylesheet" href="../mycasa-src-5.0/css/designsystem.min.css">
+      <link rel="stylesheet" href="../mycasa-src-5.0/css/casa.css">
+      <script type="text/javascript" src="../mycasa-src-5.0/js/designsystem.min.js"></script>
+      <script type="text/javascript" src="../mycasa-src-5.0/js/jquery.min.js"></script>
+      <script type="text/javascript" src="../mycasa-src-5.0/js/jquery.js"></script>
+	  <script type="text/javascript" src="va.js"></script>
+      <script type="text/javascript">
+         /* page specific js */
+
+      </script>
+       <style type="text/css">
+
+
+      /*autocomplete
+
+      .autocomplete-suggestions {border: none; background: #FFFFFF; overflow: auto;}
+
+      .autocomplete-suggestion{padding:14px;background:#eee;}
+      .autocomplete-suggestion:nth-child(odd){background:#efefef;}*/
+
+      .autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+      .autocomplete-suggestion { padding: 4px 5px 2px 16px; white-space: nowrap; overflow: hidden; }
+      .autocomplete-selected { background: #F0F0F0; }
+      .autocomplete-suggestions strong { font-weight: bold;  }
+      .autocomplete-group { padding: 2px 5px; }
+      .autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+
+      </style>
+   </head>
+   <body class="live-demo au-body au-grid">
+      <main class="au-grid">
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="logo au-body au-body--dark">
+                     <a href="index.html"><img src="../mycasa-src/img/CASALOGO-white-i.svg"></a>
+                  </div>
+                  <div class="casa-menu">
+
+                  	<div id="dropdown-menu">
+						<div id="dd-menu"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/menu.png" height="20" />Menu</a></div>
+						<div id="dd-close"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/close.png" height="20" />Close</a><br />
+						<br />
+						<p id="mycasa-home"><a href="#">myCASA home</a></p>
+						<p><a href="#">Switch profile</a></p>
+						<p><a href="mycasa-signed-out.html">Sign out</a></p>
+						</div>
+
+
+                  </div>
+               </div></div>
+            </div>
+         </div>
+         <div class="body">
+			<div class="banner">
+				<div class=container>
+					<div class="row">
+					 <div class="col-md-12">
+				This service is currently in beta, we encourage you to <a href="feedback.html">provide feedback</a>
+				</div>
+				</div>
+			</div>
+		</div>
+         <div class="container">
+               <nav class="au-breadcrumbs" aria-label="breadcrumb">
+                  <ul class="au-link-list au-link-list--inline">
+                     <li><a href="dashboard-org.html">myCASA</a></li>
+                      <li>Dangerous goods event notification</li>
+					   <li>Event details</li>
+					  <li>Failures</li>
+                  </ul>
+               </nav>
+			 <div class="casa-section">
+               <header class="au-header" role="banner">
+                  <h1 class="break desktop au-header-heading">Dangerous goods event notification</h1>
+                  <a class="au-direction-link" href="javascript:history.back()">
+					<span class="au-direction-link__arrow au-direction-link__arrow--left" aria-hidden="true"></span>Back
+					</a>
+               </header>
+			 </div>
+<div class="row">
+               	<div class="col-xs-12 col-md-12 col-lg-6">
+                  <div class="au-form-group">
+<h2>Event details</h2>
+			  
+					 
+                      
+	  <div class="au-form-group">
+  <h3 class="au-display-sm">Event failures</h3>
+  <label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">Please select all failures that apply to this event</label>
+       
+      <br>
+
+</div>
+	
+				<div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="CAO" unchecked>
+  <label class="au-control-input__text" for="CAO">CAO dangerous goods on passenger aircraft</label>
+</div>
+<div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="documentation" unchecked>
+  <label class="au-control-input__text" for="documentation">Documentation</label>
+</div>
+<div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="forbidden" unchecked>
+  <label class="au-control-input__text" for="forbidden">Forbidden dangerous goods - no approval</label>
+</div>
+ <div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="hidden" unchecked>
+  <label class="au-control-input__text" for="hidden">Hidden</label>
+</div>
+<div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="inadequate" unchecked>
+  <label class="au-control-input__text" for="inadequate">Inadequate acceptance</label>
+</div>
+<div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="labelling" unchecked>
+  <label class="au-control-input__text" for="labelling">Labelling</label>
+</div>   
+<div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="leaked" unchecked>
+  <label class="au-control-input__text" for="leaked">Leaked</label>
+</div> 
+	<div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="misdeclared" unchecked>
+  <label class="au-control-input__text" for="misdeclared">Misdeclared and not detected</label>
+</div> 
+    <div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="mishandled" unchecked>
+  <label class="au-control-input__text" for="mishandled">Mishandled</label>
+</div>                   
+     <div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="Misloaded" unchecked>
+  <label class="au-control-input__text" for="Misloaded ">Misloaded</label>
+</div>   
+	<div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="No acceptance check" unchecked>
+  <label class="au-control-input__text" for="No acceptance check">No acceptance check</label>
+</div> 
+	<div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="Not detected" unchecked>
+  <label class="au-control-input__text" for="Not detected">Not detected </label>
+</div> 
+<div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="Not offloaded" unchecked>
+  <label class="au-control-input__text" for="Not offloaded">Not offloaded</label>
+</div> 
+	<div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="NOTOC" unchecked>
+  <label class="au-control-input__text" for="NOTOC">NOTOC</label>
+</div> 
+		<div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="Packaging" unchecked>
+  <label class="au-control-input__text" for="Packaging">Packaging</label>
+</div>
+	<div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="Packing" unchecked>
+  <label class="au-control-input__text" for="Packing">Packing</label>
+</div>
+	<div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="undeclared" unchecked>
+  <label class="au-control-input__text" for="undeclared">Undeclared</label>
+</div>
+	<div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="Other" unchecked>
+  <label class="au-control-input__text" for="Other">Other</label>
+</div>
+
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mockjax.js"></script>
+    <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+    <script type="text/javascript" src="js/courses.js"></script>
+    <script type="text/javascript" src="js/demo.js"></script>
+                   
+
+                     
+                      
+                <!-- standard next button -->
+
+   				      <div class="au-form-group">
+   				           <a class="au-btn" href="flight-details.html">Next</a>
+	              </div>
+
+            </div>
+			 </div>
+			 </div>
+		  </div>
+
+
+                    <div class="footer">
+<div class="banner">
+				<div class="container">
+					<div class="row">
+					 <div class="col-xs-12">
+				We are always looking for ways to improve our services. <a href="feedback.html">Please provide feedback on myCASA</a>.
+				</div>
+				</div>
+			</div>
+		</div>
+            <div class="footer-wrapper">
+               <iframe src="../mycasa-src-4.0/footer.html" frameborder="0" border="0" scrolling="no"></iframe>
+            </div>
+         </div>
+      </main>
+	<script>
+$("#report-type").on('input', function() {
+          
+         if($(this).val()==2){
+          $("#accident").css("display","block");
+             $("#incident").css("display","none");
+          $("undeclared").css("display","none");
+			 $("misdeclared").css("display","none");
+			 $("occurance").css("display","none");
+         }
+         else if($(this).val()==3){
+          $("#accident").css("display","none");
+             $("#incident").css("display","block");
+          $("undeclared").css("display","none");
+			 $("misdeclared").css("display","none");
+			 $("occurance").css("display","none");
+         }
+         	   else if($(this).val()==4){
+          $("#accident").css("display","none");
+             $("#incident").css("display","none");
+          $("undeclared").css("display","block");
+			 $("misdeclared").css("display","none");
+			 $("occurance").css("display","none");
+         }
+	         	   else if($(this).val()==5){
+          $("#accident").css("display","none");
+             $("#incident").css("display","none");
+          $("undeclared").css("display","none");
+			 $("misdeclared").css("display","block");
+			 $("occurance").css("display","none");
+         }
+	         	   else if($(this).val()==6){
+          $("#accident").css("display","none");
+             $("#incident").css("display","none");
+          $("undeclared").css("display","none");
+			 $("misdeclared").css("display","none");
+			 $("occurance").css("display","block");
+         }
+         else {
+ $("#accident").css("display","none");
+             $("#incident").css("display","none");
+          $("undeclared").css("display","none");
+			 $("misdeclared").css("display","none");
+			 $("occurance").css("display","none");
+         }
+         
+         
+         });
+         
+	</script>
+   </body>
+</html>
