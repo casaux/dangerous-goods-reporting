@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>myCASA</title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="initial-scale=1">
+      <link rel="stylesheet" href="../mycasa-src-4.0/css/designsystem.min.css">
+      <link rel="stylesheet" href="../mycasa-src-4.0/css/casa.css">
+       <link rel="stylesheet" href="../mycasa-src-4.0/css/webfontsstyle112.css">
+      <script type="text/javascript" src="../mycasa-src-4.0/js/designsystem.min.js"></script>
+      <script type="text/javascript" src="../mycasa-src-4.0/js/jquery.min.js"></script>
+      <script type="text/javascript" src="../mycasa-src-4.0/js/jquery.js"></script>
+	  <script type="text/javascript">
+         /* page specific js */
+               
+
+
+      </script>
+   </head>
+   <body class="live-demo au-body au-grid">
+      <main class="au-grid">
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="logo au-body au-body--dark">
+                     <a href="../mycasa-sep-2020/index.html"><img src="../mycasa-src/img/CASALOGO-white-i.svg"></a>
+                  </div>
+                  <div class="casa-menu">
+
+                  	<div id="dropdown-menu">
+						<div id="dd-menu"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/menu.png" height="20" />Menu</a></div>
+						<div id="dd-close"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/close.png" height="20" />Close</a><br />
+						<br />
+						<p id="mycasa-home"><a href="#">myCASA home</a></p>
+						<p><a href="#">Switch profile</a></p>
+						<p><a href="../mycasa-sep-2020/mycasa-signed-out.html">Sign out</a></p>
+						</div>
+
+
+                  </div>
+               </div></div>
+            </div>
+         </div>
+         <div class="body">
+			<div class="banner">
+				<div class="container">
+					<div class="row">
+					 <div class="col-md-12">
+				This service is currently in beta, we encourage you to <a href="../mycasa-sep-2020/feedback.html">provide feedback</a>
+				</div>
+				</div>
+			</div>
+		</div>
+         <div class="container">
+               <nav class="au-breadcrumbs" aria-label="breadcrumb">
+                  <ul class="au-link-list au-link-list--inline">
+                     <li><a href="#">myCASA</a></li>
+                    <li>Dangerous goods event notification</li>
+                  </ul>
+               </nav>
+
+
+
+			     <div class="au-form-group">
+			           <header class="au-header" role="banner">
+                  <h1 class="break desktop au-header-heading">Dangerous goods event notification</h1>
+                           <a class="au-direction-link" href="javascript:history.back()">
+                            <span class="au-direction-link__arrow au-direction-link__arrow--left" aria-hidden="true"></span>Back
+                            </a>
+               </header>
+
+			 </div>
+
+			 <h2>Submission type</h2>
+
+
+		
+	
+	<div class="au-form-group">
+<label class="au-label">Would you like to submit multiple dangerous good event notifications?</label>
+
+                </div>
+			
+			
+       
+					
+			<div class="au-form-group">
+					<div class="au-callout" aria-label="Callout description1"> 
+
+<p>If you have multiple dangerous good event notifications to submit, you can select 'Yes' and upload a .CSV file as your notification.</p>
+						<p>Alternatively, you can submit a single notification by selecting 'No' and continuing with the notification form.</p>
+
+</div>
+                 </div>
+                 
+			<div class="au-form-group">
+			
+<div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input diff-ro" type="radio" name="radio-ex" id="yes" value="upload-csv">
+  <label class="au-control-input__text" for="yes">Yes</label>
+</div>
+<div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input diff-ro" type="radio" name="radio-ex" id="no" value="incident-details">
+  <label class="au-control-input__text" for="no">No</label>
+</div>
+                </div>	
+			
+                   
+			
+			
+
+                <div id="navigate" "navigate2">
+<div class="au-form-group">
+				<a class="au-btn" href="#">Next</a>
+                    </div>
+                </div>
+</div>
+
+
+    </div> 
+             </div>
+             </div>
+
+          <div class="footer">
+<div class="banner">
+				<div class="container">
+					<div class="row">
+					 <div class="col-xs-12">
+				We are always looking for ways to improve our services. <a href="feedback.html">Please provide feedback on myCASA</a>
+				</div>
+				</div>
+			</div>
+		</div>
+            <div class="footer-wrapper">
+               <iframe src="../mycasa-src-5.0/footer.html" frameborder="0" border="0" scrolling="no"></iframe>
+            </div>
+         </div>
+      </main>
+                 <script>
+
+                     
+                     
+                 $("#navigate a"). click(function(){
+				var radioValue = $("input[name='radio-ex']:checked"). val();
+				if (radioValue == "success-declaration") {
+					var radioValuero = $("input[name='radio-ex-1']:checked"). val();
+					if (radioValuero == "no-ro"){
+						radioValue="different-ro-declaration";
+					}
+				}
+				window.location.href=radioValue+".html";
+			 });
+                 </script>
+   </body>
+</html>

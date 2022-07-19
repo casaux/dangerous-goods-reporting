@@ -75,6 +75,20 @@
                       <li>Dangerous goods event notification</li>
                   </ul>
                </nav>
+			 
+			 <div class="au-form-group">
+               <div role="alert" class="au-body au-page-alerts au-page-alerts--error">
+				   
+
+
+  <h3>Information required</h3>
+						 <p>Please review and update the fields below.</p>
+		
+  
+	
+
+</div>	
+                 </div>
 			 <div class="casa-section">
                <header class="au-header" role="banner">
                   <h1 class="break desktop au-header-heading">Dangerous goods event notification</h1>
@@ -85,7 +99,7 @@
 			 </div>
 <div class="row">
                	<div class="col-xs-12 col-md-12 col-lg-6">
-                  <div class="au-form-group">
+<div class="au-form-group">
 <h2>Event details</h2>
 			  
 					  <div class="au-form-group">
@@ -94,7 +108,7 @@
                         Please provide your organisations reference number or unique i.d for this event
                         </span>
 					
-				<input class="au-text-input au-text-input--block" name="vh-mark" id="aircraft-registration" type="text" value="">		
+				<input class="au-text-input au-text-input--block" name="vh-mark" id="aircraft-registration" type="text" value="9876543210">		
 				</div>
 					  
 					  <div class="au-form-group">
@@ -105,7 +119,7 @@
                         <select id="report-type" class="au-select au-select--block">
                            <option value="1">Please select type of event</option>
 						 <option value="2">Accident</option>
-                           <option value="3">Incident</option>
+                           <option value="3" selected>Incident</option>
 							<option value="4">Undeclared</option>
 							<option value="5">Misdeclared</option>
 							<option value="6">Occurance</option>
@@ -156,7 +170,7 @@
                         </span>
                         <select id="report-type" class="au-select au-select--block">
                            <option value="1">Please select type of event</option>
-						 <option value="2">Container/Package Breakage</option>
+						 <option value="2" selected>Container/Package Breakage</option>
                            <option value="3">Undeclared - removed prior to flight</option>
 							<option value="4">Unmanifested/not on NOTOC</option>
 							<option value="5">Misdeclared</option>
@@ -178,15 +192,15 @@
                             </legend>
                             <div class="au-form-group casa-inline-form-subgroup">
                                 <label class="au-label" for="dd">Date</label>
-                                <input type="text" class="au-text-input" id="dd" placeholder="DD"/>
+                                <input type="text" class="au-text-input" id="dd" placeholder="DD" value="01">
                            </div>
                            <div class="au-form-group casa-inline-form-subgroup">
                                 <label class="au-label" for="MM">Month</label>
-                                <input type="text" class="au-text-input" id="MM" placeholder="MM"/>
+                                <input type="text" class="au-text-input" id="MM" placeholder="MM" value="01">
                            </div>
                            <div class="au-form-group casa-inline-form-subgroup">
                                 <label class="au-label" for="yyyy">Year</label>
-                                <input type="text" class="au-text-input" id="yyyy" placeholder="YYYY"/>
+                                <input type="text" class="au-text-input" id="yyyy" placeholder="YYYY" value="2022">
                            </div>
 
 
@@ -214,7 +228,10 @@
                         </fieldset>
           	</div>
 -->
+					
+					
 					   <div class="au-form-group">
+						   <div class="au-callout form-error">
                         <label for="location" class="au-label">Location of occurance</label>
                         <span class="au-hint-text">
                         Please select the location of the event
@@ -226,6 +243,7 @@
 							 <option value="4">BNE - Brisbane airport - YBBN</option>
 							 <option value="5">CBR - Canberra airport - YSCB</option>
                         </select>
+	</div>
                      </div>
 	
 	 <!--<div class="au-form-group">
@@ -256,7 +274,7 @@
   <h3 class="au-display-sm">Description of the occurance</h3>
   <label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">Please provide a description of the event including details of injury, damage, and the action taken</label>
         <textarea class="au-text-input au-text-input--block" name="textarea" id="textarea">
-
+An event occured at sydney airport where we discovered dangerous cargo.
         </textarea>
         <em>Maximum 1000 characters</em>
 
@@ -268,7 +286,7 @@
                         </span>
                         <select id="incident detected" class="au-select au-select--block">
                            <option value="1">Please select at what stage the event was detected</option>
-                           <option value="2">During screening - checked baggage</option>
+                           <option value="2" selected>During screening - checked baggage</option>
                            <option value="3">During screeening - cargo</option>
                            <option value="4">Pre loading</option>
                            <option value="5">Post loading - pre flight</option>
@@ -288,17 +306,157 @@
                       </legend>
 
                                             <div class="au-control-input au-control-input--block">
-  <input class="au-control-input__input" type="radio" name="radio-ex1" id="No" value="">
-  <label class="au-control-input__text" for="No">Passenger</label>
+  <input class="au-control-input__input" type="radio" name="radio-ex" id="passenger" value="">
+  <label class="au-control-input__text" for="passenger">Passenger</label>
 </div>
                       
                       <div class="au-control-input au-control-input--block">
-  <input class="au-control-input__input" type="radio" name="radio-ex1" id="yes" value="">
-  <label class="au-control-input__text" for="yes">Cargo (freight)</label>
+  <input class="au-control-input__input" type="radio" name="radio-ex" id="cargo" value="" checked>
+  <label class="au-control-input__text" for="cargo">Cargo (freight)</label>
 </div>
   </fieldset>
                   </div>
+					<div class="au-form-group">
+					                      <label class="au-display-sm">Flight number or flight details</label>
+                      <label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">Please enter the flight number the event is related to </label>
+                          <input class="au-text-input au-text-input--block" name="flight-number" id="vh-mark" type="text" value="">	
+                    </div>
+				  
+				 <!-- <div class="au-form-group casa-inline-form-group">
+                       <fieldset class="au-fieldset">
+                            <legend class="au-fieldset__legend">
+                                <h3 class="au-display-sm">Date of flight</h3>
+                                <span class="au-hint-text">For example, 31 01 2020</span>
+                            </legend>
+                            <div class="au-form-group casa-inline-form-subgroup">
+                                <label class="au-label" for="dd">Date</label>
+                                <input type="text" class="au-text-input" id="dd" placeholder="DD"/>
+                           </div>
+                           <div class="au-form-group casa-inline-form-subgroup">
+                                <label class="au-label" for="MM">Month</label>
+                                <input type="text" class="au-text-input" id="MM" placeholder="MM"/>
+                           </div>
+                           <div class="au-form-group casa-inline-form-subgroup">
+                                <label class="au-label" for="yyyy">Year</label>
+                                <input type="text" class="au-text-input" id="yyyy" placeholder="YYYY"/>
+                           </div>
+
+
+                        </fieldset>
+                    </div> 
+-->
+					 
 					
+						<div class="au-form-group">
+                    <fieldset class="au-fieldset">
+                        <legend class="au-fieldset__legend">
+                            <h3 class="au-display-sm">Aircraft registration</h3>
+                        </legend>
+ 					<label class="au-label au-hint-text" for="textarea" style="font-weight:normal;">Please select where the aircraft is registered </label>
+						<br>
+					
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="radio" name="assessed-simulator"
+                                       id="assessed-aircraft" value="select-review" checked>
+                                <label class="au-control-input__text" for="assessed-aircraft">Australian registration</label>
+                        </div>
+
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="radio" name="assessed-simulator"
+                                       id="assessed-simulator" value="select-review-sim">
+                                <label class="au-control-input__text" for="assessed-simulator">International registration</label>
+                        </div>
+
+
+
+                    </fieldset>
+                    </div>
+
+
+
+
+
+				<div class="casa-section vh-mark">
+					<div class="au-form-group">
+                        <label class="au-label" for="name">VH Mark</label>
+
+
+
+
+				<input class="au-text-input au-text-input--block" name="vh-mark" id="vh-mark" type="text" value="VH-">
+
+
+				</div>
+				</div>
+
+				<div class="casa-section simulator casa-hidden">
+
+					<div class="au-form-group">
+                        <label class="au-label" for="name">International registration mark</label>
+                       
+
+                 <input class="au-text-input au-text-input--block" name="simulator-id"id="simulator-id" type="text" value="">
+               	</div>
+					</div>
+					
+					
+					<!--  <div class="au-form-group">
+                        <label class="au-label" for="name">Aircraft type</label>
+					
+				<input class="au-text-input au-text-input--block" name="vh-mark" id="vh-mark" type="text" value="">		
+				</div>
+					  
+					  <div class="au-form-group">
+                        <label for="destination-airport" class="au-label">Destination airport</label>
+                        <span class="au-hint-text">
+                        Please select the flight destination airport of where the event occurred
+                        </span>
+                        <select id="destination-airport" class="au-select au-select--block">
+                           <option value="1">Please select the flight destination</option>
+                           <option value="2">SYD - Sydney Airport - YSSY</option>
+							<option value="2">*list of locations to be provided*</option>
+                        </select>
+                     </div>
+				-->	  
+			
+					 <div class="au-form-group">
+                  <fieldset class="au-fieldset">
+                      <legend class="au-fieldset__legend">
+                          <h3 class="au-display-sm">Type of flight</h3>
+                          <span class="au-hint-text">Please select if the flight was domestic or international</span>
+                      </legend>
+
+                                            <div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="radio" name="radio-ex1" id="domestic" value="" checked>
+  <label class="au-control-input__text" for="domestic">Domestic</label>
+</div>
+                      
+                      <div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="radio" name="radio-ex1" id="international" value="">
+  <label class="au-control-input__text" for="international">International</label>
+</div>
+  </fieldset>
+                  </div>
+					<div class="au-form-group">
+                  <fieldset class="au-fieldset">
+                      <legend class="au-fieldset__legend">
+                          <h3 class="au-display-sm"><abbr title="Australian Transport Safety Bureau">ATSB</abbr> reportable</h3>
+                          <span class="au-hint-text">Has this event been reported to the ATSB?</span>
+                      </legend>
+
+                                            <div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="radio" name="radio-ex2" id="No" value="" checked>
+  <label class="au-control-input__text" for="No">No</label>
+</div>
+                      
+                      <div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input" type="radio" name="radio-ex2" id="yes" value="">
+  <label class="au-control-input__text" for="yes">Yes</label>
+</div>
+  </fieldset>
+                  </div>
+                      
+	  
 
     <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
     <script type="text/javascript" src="js/jquery.mockjax.js"></script>
@@ -312,7 +470,7 @@
                 <!-- standard next button -->
 
    				      <div class="au-form-group">
-   				           <a class="au-btn" href="flight-details.html">Next</a>
+   				           <a class="au-btn" href="notification-uploaded-correct.html">Update</a>
 	              </div>
 
             </div>
